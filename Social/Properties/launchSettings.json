@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:39263",
+      "sslPort": 44358
+    }
+  },
+  "profiles": {
+    "Social": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "use64Bit": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MSSQL_CONNECTION": "Server=.;Database=social;User Id=sa;Password=1q2w3e4r@#$;",
+        "JwtKey": "ba9ddabeb2f6ca4355449cebe834e8a69a0a3e079429e082c72ebbc4d029d36c"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MSSQL_CONNECTION": "Server=.;Database=social;User Id=sa;Password=1q2w3e4r@#$;",
+        "JwtKey": "ba9ddabeb2f6ca4355449cebe834e8a69a0a3e079429e082c72ebbc4d029d36c"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MSSQL_CONNECTION": "Server=.;Database=social;User Id=sa;Password=1q2w3e4r@#$;",
+        "JwtKey": "ba9ddabeb2f6ca4355449cebe834e8a69a0a3e079429e082c72ebbc4d029d36c"
+      }
+    }
+  }
+}
