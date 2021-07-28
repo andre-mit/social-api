@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Social.Application\Social.Application.csproj" />
+    <ProjectReference Include="..\Social.Domain\Social.Domain.csproj" />
+    <ProjectReference Include="..\Social.Infra.Data\Social.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
